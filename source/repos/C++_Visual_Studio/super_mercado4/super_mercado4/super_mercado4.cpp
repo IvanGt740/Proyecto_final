@@ -1,5 +1,7 @@
 #include "Clientes.h"
 #include "Puestos.h"
+#include "Empleados.h"
+#include "Ventas.h"
 
 #include <iostream>
 #include <mysql.h>
@@ -9,12 +11,16 @@ using namespace std;
 int main() {
     
     while (true) {
+
+        cout << " " << endl;
         cout << "Bienvenido al programa 'Super Mercado los Juanitos'" << endl;
         cout << "Elige la opcion que deseas realizar: " << endl;
         cout << " " << endl;
         cout << "1. Emitir factura" << endl;
         cout << "2. Crear o modificar Clientes" << endl;
         cout << "3. Crear o modificar Puestos" << endl;
+        cout << "4. Crear o modificar Empleados" << endl;
+        cout << "5. Crear o modificar Ventas" << endl;
 
         int opcion;
         cin >> opcion;
@@ -52,6 +58,7 @@ int main() {
                 // Evaluar la opción seleccionada
                 switch (opcion) {
                 case 1:
+                    cout << " " << endl;
                     cout << "Ha seleccionado crear Cliente" << endl;
 
                     cout << "Ingrese nombres: ";
@@ -85,6 +92,7 @@ int main() {
                     break;
 
                 case 2:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Leer Cliente Cliente'" << endl;
                     {
                         Clientes cliente = Clientes(id, nombres, apellidos, NIT, genero, telefono, correo_electronico, fecha_ingreso);
@@ -93,6 +101,7 @@ int main() {
                     break;
 
                 case 3:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Borrar Cliente '" << endl;
 
                     {
@@ -111,6 +120,7 @@ int main() {
                     break;
 
                 case 4:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Actualizar cliente'" << endl;
                     {
                         Clientes cliente = Clientes(id, nombres, apellidos, NIT, genero, telefono, correo_electronico, fecha_ingreso);
@@ -156,6 +166,7 @@ int main() {
                     break;
 
                 case 5:
+                    cout << " " << endl;
                     cout << "Volviendo al menu principal..." << endl;
                     break;
 
@@ -168,7 +179,7 @@ int main() {
 
         
         case 3:
-            // Menú de clientes
+            // Menú de puestos
             do {
                 int id = 0;
                 string puesto;
@@ -190,6 +201,7 @@ int main() {
                 // Evaluar la opción seleccionada
                 switch (opcion) {
                 case 1:
+                    cout << " " << endl;
                     cout << "Ha seleccionado crear Puesto" << endl;
 
                     cout << "Ingrese puesto: " << endl;
@@ -205,6 +217,7 @@ int main() {
                     break;
 
                 case 2:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Leer Puestos'" << endl;
                     {
                         Puestos Npuesto = Puestos(id, puesto);
@@ -213,6 +226,7 @@ int main() {
                     break;
 
                 case 3:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Borrar Puesto '" << endl;
 
                     {
@@ -231,6 +245,7 @@ int main() {
                     break;
 
                 case 4:
+                    cout << " " << endl;
                     cout << "Ha seleccionado 'Actualizar Puestos'" << endl;
                     {
                         Puestos Npuesto = Puestos(id, puesto);
@@ -251,6 +266,312 @@ int main() {
                     break;
 
                 case 5:
+                    cout << " " << endl;
+                    cout << "Volviendo al menu principal..." << endl;
+                    break;
+
+                default:
+                    cout << " " << endl;
+                    cout << "Error, por favor escribe un numero correcto" << endl;
+                    break;
+                }
+            } while (opcion != 5); // Salir del bucle cuando se selecciona la opción 5
+            break; // Salir del switch y volver al menú principal
+
+
+        case 4:
+            //Menu de Empleados
+            do {
+                int id = 0;
+                string nombres, apellidos, direccion;
+                int telefono = 0;
+                string DPI, genero, fecha_nacimiento;
+                int idPuesto = 0;
+                string fecha_inicio_labores, fecha_ingreso;
+
+                cout << " " << endl;
+                cout << "Bienvenido al programa para editar Empleados 'Super Mercado los Juanitos'" << endl;
+                cout << "¿Que deseas realizar o modificar?" << endl;
+                cout << " " << endl;
+                cout << "1. Crear Empleado" << endl;
+                cout << "2. Leer Empleados" << endl;
+                cout << "3. Borrar Empleado" << endl;
+                cout << "4. Actualizar Empleado" << endl;
+                cout << "5. Volver al menu principal" << endl;
+
+
+                cout << "Elige la opcion que deseas realizar: ";
+                cin >> opcion;
+                cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+
+                // Evaluar la opción seleccionada
+                switch (opcion) {
+                case 1:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado crear Empleado" << endl;
+
+                    cout << "Ingrese nombres: " << endl;
+                    getline(cin, nombres);
+
+                    cout << "Ingrese apellidos: " << endl;
+                    getline(cin, apellidos);
+
+                    cout << "Ingrese direccion: " << endl;
+                    getline(cin, direccion);
+
+                    cout << "Ingrese telefono: " << endl;
+                    cin >> telefono;
+                    cin.ignore();
+
+                    cout << "Ingrese DPI: " << endl;
+                    getline(cin, DPI);
+
+                    cout << "Ingrese genero: " << endl;
+                    getline(cin, genero);
+
+                    cout << "Ingrese fecha nacimiento: " << endl;
+                    getline(cin, fecha_nacimiento);
+
+                    cout << "Ingrese id del Puesto: " << endl;
+                    cin >> idPuesto;
+                    cin.ignore();
+
+                    cout << "Ingrese fecha inicio de labores: " << endl;
+                    getline(cin, fecha_inicio_labores);
+
+                    cout << "Ingrese fecha de ingreso: " << endl;
+                    getline(cin, fecha_ingreso);
+
+
+                    // Crear el Empleado y llamar al método para guardar en la base de datos
+                    {
+                        Empleados empleado = Empleados(id, nombres, apellidos, direccion, telefono, DPI, genero, fecha_nacimiento, idPuesto, fecha_inicio_labores, fecha_ingreso);
+                        empleado.crear();
+                    }
+
+                    break;
+
+                case 2:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Leer Puestos'" << endl;
+                    {
+                        Empleados empleado = Empleados(id, nombres, apellidos, direccion, telefono, DPI, genero, fecha_nacimiento, idPuesto, fecha_inicio_labores, fecha_ingreso);
+                        empleado.leer();
+                    }
+                    break;
+
+                case 3:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Borrar Empleado '" << endl;
+
+                    {
+                        Empleados empleado = Empleados(id, nombres, apellidos, direccion, telefono, DPI, genero, fecha_nacimiento, idPuesto, fecha_inicio_labores, fecha_ingreso);
+                        empleado.leer();
+
+                        cout << "Ingrese el ID a eliminar: ";
+                        cin >> id;
+                        cin.ignore();
+                        empleado.setId(id);
+                        empleado.leer();
+                        empleado.borrar();
+                        empleado.leer();
+                    }
+
+                    break;
+
+                case 4:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Actualizar Puestos'" << endl;
+                    {
+                        Empleados empleado = Empleados(id, nombres, apellidos, direccion, telefono, DPI, genero, fecha_nacimiento, idPuesto, fecha_inicio_labores, fecha_ingreso);
+                        empleado.leer();
+
+                        cout << "Ingrese el ID del puesto: ";
+                        cin >> id;
+                        cin.ignore();
+                        empleado.setId(id);
+
+                        cout << "Ingrese nombres: " << endl;
+                        getline(cin, nombres);
+
+                        cout << "Ingrese apellidos: " << endl;
+                        getline(cin, nombres);
+
+                        cout << "Ingrese direccion: " << endl;
+                        getline(cin, nombres);
+
+                        cout << "Ingrese telefono: " << endl;
+                        cin >> telefono;
+                        cin.ignore();
+
+                        cout << "Ingrese DPI: " << endl;
+                        getline(cin, DPI);
+
+                        cout << "Ingrese genero: " << endl;
+                        getline(cin, genero);
+
+                        cout << "Ingrese fecha nacimiento: " << endl;
+                        getline(cin, fecha_nacimiento);
+
+                        cout << "Ingrese id del Puesto: " << endl;
+                        cin >> idPuesto;
+                        cin.ignore();
+
+                        cout << "Ingrese fecha inicio de labores: " << endl;
+                        getline(cin, fecha_inicio_labores);
+
+                        cout << "Ingrese fecha de ingreso: " << endl;
+                        getline(cin, fecha_ingreso);
+
+                        empleado.actualizar();
+                        empleado.leer();
+                    }
+                    break;
+
+                case 5:
+                    cout << " " << endl;
+                    cout << "Volviendo al menu principal..." << endl;
+                    break;
+
+                default:
+                    cout << " " << endl;
+                    cout << "Error, por favor escribe un numero correcto" << endl;
+                    break;
+                }
+            } while (opcion != 5); // Salir del bucle cuando se selecciona la opción 5
+            break; // Salir del switch y volver al menú principal
+
+        case 5:
+
+            do {
+                int id = 0;
+                int noFactura = 0;
+                char serie ='b';
+                string fecha_factura;
+                int idCliente = 0;
+                int idEmpleado = 0;
+                string fecha_ingreso;
+
+                cout << " " << endl;
+                cout << "Bienvenido al programa para editar Ventas 'Super Mercado los Juanitos'" << endl;
+                cout << "¿Que deseas realizar o modificar?" << endl;
+                cout << " " << endl;
+
+                cout << "1. Crear Venta" << endl;
+                cout << "2. Leer Venta" << endl;
+                cout << "3. Borrar Venta" << endl;
+                cout << "4. Actualizar Venta" << endl;
+                cout << "5. Volver al menu principal" << endl;
+
+                cout << "Elige la opcion que deseas realizar: ";
+                cin >> opcion;
+                cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+
+                // Evaluar la opción seleccionada
+                switch (opcion) {
+                case 1:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado crear Venta" << endl;
+
+                    cout << "Ingrese numero de Factura: ";
+                    cin >> noFactura;
+                    cin.ignore();
+
+                    cout << "Ingrese serie: ";
+                    cin >> serie;
+                    cin.ignore();
+
+                    cout << "Ingrese Fecha de Factura: ";
+                    getline(cin, fecha_factura);
+
+                    cout << "Ingrese id de cliente: ";
+                    cin >> idCliente;
+                    cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+
+                    cout << "Ingrese id de Empleado: ";
+                    cin >> idEmpleado;
+                    cin.ignore();
+
+                    cout << "Ingrese fecha de ingreso: ";
+                    getline(cin, fecha_ingreso);
+
+                    // Crear el cliente y llamar al método para guardar en la base de datos
+                    {
+                        Ventas venta = Ventas(id, noFactura, serie, fecha_factura, idCliente, idEmpleado, fecha_ingreso);
+                        venta.crear();
+                    }
+
+                    break;
+
+                case 2:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Leer Ventas'" << endl;
+                    {
+                        Ventas venta = Ventas(id, noFactura, serie, fecha_factura, idCliente, idEmpleado, fecha_ingreso);
+                        venta.leer();
+                    }
+                    break;
+
+                case 3:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Borrar Venta '" << endl;
+
+                    {
+                        Ventas venta = Ventas(id, noFactura, serie, fecha_factura, idCliente, idEmpleado, fecha_ingreso);
+                        venta.leer();
+
+                        cout << "Ingrese el ID a eliminar: ";
+                        cin >> id;
+                        cin.ignore();
+                        venta.setId(id);
+                        venta.leer();
+                        venta.borrar();
+                        venta.leer();
+                    }
+
+                    break;
+
+                case 4:
+                    cout << " " << endl;
+                    cout << "Ha seleccionado 'Actualizar Ventas'" << endl;
+                    {
+                        Ventas venta = Ventas(id, noFactura, serie, fecha_factura, idCliente, idEmpleado, fecha_ingreso);
+                        venta.leer();
+
+                        cout << "Ingrese el ID de la Venta: ";
+                        cin >> id;
+                        cin.ignore();
+                        venta.setId(id);
+
+                        cout << "Ingrese numero de Factura: ";
+                        cin >> noFactura;
+                        cin.ignore();
+
+                        cout << "Ingrese serie: ";
+                        cin >> serie;
+                        cin.ignore();
+
+                        cout << "Ingrese Fecha de Factura: ";
+                        getline(cin, fecha_factura);
+
+                        cout << "Ingrese id de cliente: ";
+                        cin >> idCliente;
+                        cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+
+                        cout << "Ingrese id de Empleado: ";
+                        cin >> idEmpleado;
+                        cin.ignore();
+
+                        cout << "Ingrese fecha de ingreso: ";
+                        getline(cin, fecha_ingreso);
+
+                        venta.actualizar();
+                        venta.leer();
+                    }
+                    break;
+
+                case 5:
+                    cout << " " << endl;
                     cout << "Volviendo al menu principal..." << endl;
                     break;
 
@@ -262,7 +583,7 @@ int main() {
             break; // Salir del switch y volver al menú principal
 
 
-       
+            break;
 
 
 

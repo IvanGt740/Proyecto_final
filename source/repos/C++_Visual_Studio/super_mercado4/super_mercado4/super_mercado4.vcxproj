@@ -133,13 +133,17 @@
   <ItemGroup>
     <ClCompile Include="Clientes.cpp" />
     <ClCompile Include="ConexionBD.cpp" />
+    <ClCompile Include="Empleados.cpp" />
     <ClCompile Include="Puestos.cpp" />
     <ClCompile Include="super_mercado4.cpp" />
+    <ClCompile Include="Ventas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clientes.h" />
     <ClInclude Include="ConexionBD.h" />
+    <ClInclude Include="Empleados.h" />
     <ClInclude Include="Puestos.h" />
+    <ClInclude Include="Ventas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
