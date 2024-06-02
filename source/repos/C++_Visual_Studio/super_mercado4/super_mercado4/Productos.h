@@ -64,7 +64,7 @@ public:
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
         if (cn.getConectar()) {
-            string insert = "INSERT INTO Productos(producto, descripcion, imagen, precioCosto, precioVenta, existencia, fechaingreso, idMarca) VALUES('" + producto + "', '" + descripcion + "', '" + imagen + "', " + to_string(precioCosto) + ", " + to_string(precioVenta) + ", " + to_string(existencia) + ", '" + fecha_ingreso + "', " + to_string(idMarca) + ");";
+            string insert = "INSERT INTO Productos(producto, idMarca, descripcion, imagen, precioCosto, precioVenta, existencia, fechaingreso,) VALUES('" + producto + "', '" + descripcion + "', '" + imagen + "', " + to_string(precioCosto) + ", " + to_string(precioVenta) + ", " + to_string(existencia) + ", '" + fecha_ingreso + "', " + to_string(idMarca) + ");";
             const char* i = insert.c_str();
             q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
@@ -135,7 +135,7 @@ public:
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
         if (cn.getConectar()) {
-            string update = "UPDATE Productos SET producto = '" + producto + "', descripcion = '" + descripcion + "', imagen = '" + imagen + "', precioCosto = " + to_string(precioCosto) + ", precioVenta = " + to_string(precioVenta) + ", existencia = " + to_string(existencia) + ", fechaingreso = '" + fecha_ingreso + "', idMarca = " + to_string(idMarca) + " WHERE idProducto = " + to_string(idproducto) + "";
+            string update = "UPDATE Productos SET producto = '" + producto + "'idMarca = " + to_string(idMarca) + ", descripcion = '" + descripcion + "', imagen = '" + imagen + "', precioCosto = " + to_string(precioCosto) + ", precioVenta = " + to_string(precioVenta) + ", existencia = " + to_string(existencia) + ", fechaingreso = '" + fecha_ingreso + "', WHERE idProducto = " + to_string(idproducto) + "";
             const char* i = update.c_str();
             q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
