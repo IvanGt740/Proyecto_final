@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Clientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\super_mercado4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\super_mercado4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,28 +15,24 @@
       "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Productos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Clientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Empleados.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Empleados.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Clientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\ConexionBD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\ConexionBD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Clientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Puestos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Puestos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Empleados.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Empleados.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|solutionrelative:super_mercado4\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FADEFDC4-D331-4A4B-A6C1-989A3BAE3EB8}|super_mercado4\\super_mercado4.vcxproj|C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Puestos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -46,24 +46,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Productos.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Productos.h",
               "RelativeDocumentMoniker": "super_mercado4\\Productos.h",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Productos.h",
               "RelativeToolTip": "super_mercado4\\Productos.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-01T23:45:12.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T23:45:12.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Ventas.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Ventas.h",
               "RelativeDocumentMoniker": "super_mercado4\\Ventas.h",
@@ -71,12 +70,11 @@
               "RelativeToolTip": "super_mercado4\\Ventas.h",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-01T22:11:39.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T22:11:39.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Empleados.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Empleados.h",
               "RelativeDocumentMoniker": "super_mercado4\\Empleados.h",
@@ -84,18 +82,17 @@
               "RelativeToolTip": "super_mercado4\\Empleados.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-01T22:11:39.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T22:11:39.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Puestos.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Puestos.h",
               "RelativeDocumentMoniker": "super_mercado4\\Puestos.h",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Puestos.h",
               "RelativeToolTip": "super_mercado4\\Puestos.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-01T22:11:39.586Z"
             },
@@ -109,44 +106,42 @@
               "RelativeToolTip": "super_mercado4\\ConexionBD.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-01T22:11:39.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T22:11:39.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Clientes.cpp",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.cpp",
               "RelativeDocumentMoniker": "super_mercado4\\Clientes.cpp",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.cpp",
               "RelativeToolTip": "super_mercado4\\Clientes.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAATAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAAIsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-01T22:11:39.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T22:11:39.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Clientes.h",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.h",
               "RelativeDocumentMoniker": "super_mercado4\\Clientes.h",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\Clientes.h",
               "RelativeToolTip": "super_mercado4\\Clientes.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ8AAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-01T22:11:39.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "super_mercado4.cpp",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\super_mercado4.cpp",
               "RelativeDocumentMoniker": "super_mercado4\\super_mercado4.cpp",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto final de poo\\Proyecto_final\\source\\repos\\C\u002B\u002B_Visual_Studio\\super_mercado4\\super_mercado4\\super_mercado4.cpp",
               "RelativeToolTip": "super_mercado4\\super_mercado4.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMQCAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQBAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-01T22:11:39.708Z",
               "EditorCaption": ""

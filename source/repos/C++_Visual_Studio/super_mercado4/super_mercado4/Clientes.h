@@ -30,7 +30,7 @@ public:
         fecha_ingreso = fecha_ing;
     }
 
-    // Métodos modificadores
+    // Métodos modificadores.
     void setId(int i) { id = i; }
     void setNombres(string nom) { nombres = nom; }
     void setApellidos(string ape) { apellidos = ape; }
