@@ -2,6 +2,7 @@
 #include "Puestos.h"
 #include "Empleados.h"
 #include "Ventas.h"
+#include "Productos.h"
 
 #include <iostream>
 #include <mysql.h>
@@ -21,6 +22,8 @@ int main() {
         cout << "3. Crear o modificar Puestos" << endl;
         cout << "4. Crear o modificar Empleados" << endl;
         cout << "5. Crear o modificar Ventas" << endl;
+        cout << "6. Crear o modificar Producto" << endl;
+        cout << "7. Salir" << endl;
 
         int opcion;
         cin >> opcion;
@@ -33,7 +36,7 @@ int main() {
             // Código para emitir factura
             break;
 
-        case 2: 
+        case 2:
             // Menú de clientes
             do {
                 int id = 0;
@@ -177,7 +180,7 @@ int main() {
             } while (opcion != 5); // Salir del bucle cuando se selecciona la opción 5
             break; // Salir del switch y volver al menú principal
 
-        
+
         case 3:
             // Menú de puestos
             do {
@@ -193,7 +196,7 @@ int main() {
                 cout << "4. Actualizar Puesto" << endl;
                 cout << "5. Volver al menu principal" << endl;
 
-                
+
                 cout << "Elige la opcion que deseas realizar: ";
                 cin >> opcion;
                 cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
@@ -446,7 +449,7 @@ int main() {
             do {
                 int id = 0;
                 int noFactura = 0;
-                char serie ='b';
+                char serie = 'b';
                 string fecha_factura;
                 int idCliente = 0;
                 int idEmpleado = 0;
@@ -587,31 +590,160 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        default:
-            cout << "Error, por favor escribe un numero correcto" << endl;
+            cout << "Error, por favor escribe un número correcto" << endl;
             break;
+
+              case 6:
+                  // Menú de productos
+                  do {
+                      int idproducto = 0;
+                      string producto, descripcion;
+                      double precioCosto, precioVenta;
+                      int existencia;
+                      string fecha_ingreso;
+
+                      cout << " " << endl;
+                      cout << "Bienvenido al programa para editar Productos 'Super Mercado los Juanitos'" << endl;
+                      cout << "¿Que deseas realizar o modificar?" << endl;
+                      cout << " " << endl;
+                      cout << "1. Crear Producto" << endl;
+                      cout << "2. Leer Productos" << endl;
+                      cout << "3. Borrar Producto" << endl;
+                      cout << "4. Actualizar Producto" << endl;
+                      cout << "5. Volver al menu principal" << endl;
+
+                      cout << "Elige la opcion que deseas realizar: ";
+                      cin >> opcion;
+                      cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+
+                      // Evaluar la opción seleccionada
+                      switch (opcion) {
+                      case 1:
+                          cout << " " << endl;
+                          cout << "Ha seleccionado crear Producto" << endl;
+
+                          cout << "Ingrese nombre del producto: ";
+                          getline(cin, producto);
+
+                          cout << "Ingrese descripción: ";
+                          getline(cin, descripcion);
+
+                          cout << "Ingrese precio de costo: ";
+                          cin >> precioCosto;
+
+                          cout << "Ingrese precio de venta: ";
+                          cin >> precioVenta;
+
+                          cout << "Ingrese existencia: ";
+                          cin >> existencia;
+
+                          cout << "Ingrese fecha de ingreso: ";
+                          cin.ignore(); // Para limpiar el buffer
+                          getline(cin, fecha_ingreso);
+
+                          // Crear el producto y llamar al método para guardar en la base de datos
+                          {
+                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              producto2.crear();
+                          }
+
+                          break;
+
+                      case 2:
+                          cout << " " << endl;
+                          cout << "Ha seleccionado 'Leer Productos'" << endl;
+                          {
+                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              producto2.leer();
+                          }
+                          break;
+
+                      case 3:
+                          cout << " " << endl;
+                          cout << "Ha seleccionado 'Borrar Producto '" << endl;
+
+                          {
+                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              producto2.leer();
+
+                              cout << "Ingrese el ID a eliminar: ";
+                              cin >> idproducto;
+                              cin.ignore();
+                              producto2.setIdProducto(idproducto);
+                              producto2.leer();
+                              producto2.borrar();
+                              producto2.leer();
+                          }
+
+                          break;
+
+                      case 4:
+                          cout << " " << endl;
+                          cout << "Ha seleccionado 'Actualizar Productos'" << endl;
+                          {
+                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              producto2.leer();
+
+                              cout << "Ingrese el ID del producto: ";
+                              cin >> idproducto;
+                              cin.ignore();
+                              producto2.setIdProducto(idproducto);
+
+                              cout << "Ingrese nombre del producto: ";
+                              string nombreProducto;
+                              getline(cin, nombreProducto);
+                              producto2.setProducto(nombreProducto);
+
+                              cout << "Ingrese descripción: ";
+                              getline(cin, descripcion);
+                              producto2.setDescripcion(descripcion);
+
+                              cout << "Ingrese precio de costo: ";
+                              cin >> precioCosto;
+                              producto2.setPrecioCosto(precioCosto);
+
+                              cout << "Ingrese precio de venta: ";
+                              cin >> precioVenta;
+                              producto2.setPrecioVenta(precioVenta);
+
+                              cout << "Ingrese existencia: ";
+                              cin >> existencia;
+                              producto2.setExistencia(existencia);
+
+                              cout << "Ingrese fecha de ingreso: ";
+                              cin.ignore(); // Para limpiar el buffer
+                              getline(cin, fecha_ingreso);
+                              producto2.setFechaIngreso(fecha_ingreso);
+
+                              producto2.actualizar();
+                              producto2.leer();
+                          }
+                          break;
+
+
+                      case 5:
+                          cout << " " << endl;
+                          cout << "Volviendo al menu principal..." << endl;
+                          break;
+
+                      default:
+                          cout << "Error, por favor escribe un numero correcto" << endl;
+                          break;
+                      }
+                  } while (opcion != 5); // Salir del bucle cuando se selecciona la opción 5
+                  break; // Salir del switch y volver al menú principal
+
+              case 7:
+                  cout << "Saliendo del programa. ¡Hasta luego!" << endl;
+                  return 0; // Salir del programa si el usuario selecciona la opción 7
+
+              default:
+                  cout << "Error, por favor escribe un número correcto" << endl;
+                  break;
         }
     }
-
-
-
-
     return 0;
 }
+
+
+       
