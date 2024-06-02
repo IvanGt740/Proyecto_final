@@ -306,7 +306,7 @@ int main() {
 
                 cout << "Elige la opcion que deseas realizar: ";
                 cin >> opcion;
-                cin.ignore(); // Para ignorar el carácter de nueva línea pendiente
+                cin.ignore(); 
 
                 // Evaluar la opción seleccionada
                 switch (opcion) {
