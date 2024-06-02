@@ -11,7 +11,9 @@ class Productos {
 public:
     int idproducto = 0;
     string producto;
+    int idMarca = 0;
     string descripcion;
+    string imagen;
     double precioCosto = 0.0;
     double precioVenta = 0.0;
     int existencia = 0;
@@ -22,10 +24,12 @@ public:
     Productos() {
     }
 
-    Productos(int iP, string pdt, string dsc, double PC, double PV, int EX, string fechaI) {
+    Productos(int iP, string pdt, int iM, string dsc, string IMG, double PC, double PV, int EX, string fechaI) {
         idproducto = iP;
         producto = pdt;
+        idMarca = iM;
         descripcion = dsc;
+        imagen = IMG;
         precioCosto = PC;
         precioVenta = PV;
         existencia = EX;
@@ -35,7 +39,9 @@ public:
     // Métodos modificadores
     void setIdProducto(int iP) { idproducto = iP; }
     void setProducto(string pdt) { producto = pdt; }
+    void setIdMarca(int iM) { idMarca = iM; }
     void setDescripcion(string dsc) { descripcion = dsc; }
+    void setImagen(string IMG) { imagen = IMG; }
     void setPrecioCosto(double PC) { precioCosto = PC; }
     void setPrecioVenta(double PV) { precioVenta = PV; }
     void setExistencia(int EX) { existencia = EX; }
@@ -44,7 +50,9 @@ public:
     // Métodos para obtener valores
     int getIdProducto() { return idproducto; }
     string getProducto() { return producto; }
+    int getIdMarca() { return idMarca; }
     string getDescripcion() { return descripcion; }
+    string getImagen() { return imagen; }
     double getPrecioCosto() { return precioCosto; }
     double getPrecioVenta() { return precioVenta; }
     int getExistencia() { return existencia; }
@@ -56,7 +64,7 @@ public:
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
         if (cn.getConectar()) {
-            string insert = "INSERT INTO Productos(producto, descripcion, precioCosto, precioVenta, existencia, fechaingreso) VALUES('" + producto + "', '" + descripcion + "', " + to_string(precioCosto) + ", " + to_string(precioVenta) + ", " + to_string(existencia) + ", '" + fecha_ingreso + "');";
+            string insert = "INSERT INTO Productos(producto, descripcion, imagen, precioCosto, precioVenta, existencia, fechaingreso, idMarca) VALUES('" + producto + "', '" + descripcion + "', '" + imagen + "', " + to_string(precioCosto) + ", " + to_string(precioVenta) + ", " + to_string(existencia) + ", '" + fecha_ingreso + "', " + to_string(idMarca) + ");";
             const char* i = insert.c_str();
             q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
@@ -87,7 +95,7 @@ public:
             if (!q_estado) {
                 resultado = mysql_store_result(cn.getConectar());
                 while (fila = mysql_fetch_row(resultado)) {
-                    cout << fila[0] << "  |  " << fila[1] << "  |  " << fila[2] << "  |  " << fila[3] << "  |  " << fila[4] << "  |  " << fila[5] << "  |  " << fila[6] << endl;
+                    cout << fila[0] << "  |  " << fila[1] << "  |  " << fila[2] << "  |  " << fila[3] << "  |  " << fila[4] << "  |  " << fila[5] << "  |  " << fila[6] << "  |  " << fila[7] << "  |  " << fila[8] << endl;
                 }
             }
             else {
@@ -127,7 +135,7 @@ public:
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
         if (cn.getConectar()) {
-            string update = "UPDATE Productos SET producto = '" + producto + "', descripcion = '" + descripcion + "', precioCosto = " + to_string(precioCosto) + ", precioVenta = " + to_string(precioVenta) + ", existencia = " + to_string(existencia) + ", fechaingreso = '" + fecha_ingreso + "' WHERE idProducto = " + to_string(idproducto) + "";
+            string update = "UPDATE Productos SET producto = '" + producto + "', descripcion = '" + descripcion + "', imagen = '" + imagen + "', precioCosto = " + to_string(precioCosto) + ", precioVenta = " + to_string(precioVenta) + ", existencia = " + to_string(existencia) + ", fechaingreso = '" + fecha_ingreso + "', idMarca = " + to_string(idMarca) + " WHERE idProducto = " + to_string(idproducto) + "";
             const char* i = update.c_str();
             q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
@@ -143,3 +151,4 @@ public:
         cn.cerrar_conexion();
     }
 };
+

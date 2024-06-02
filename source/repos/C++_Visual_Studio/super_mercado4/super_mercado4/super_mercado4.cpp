@@ -597,9 +597,9 @@ int main() {
                   // Menú de productos
                   do {
                       int idproducto = 0;
-                      string producto, descripcion;
+                      string producto, descripcion, imagen; // Agregué 'imagen' aquí
                       double precioCosto, precioVenta;
-                      int existencia;
+                      int existencia, idMarca; // Agregué 'idMarca' aquí
                       string fecha_ingreso;
 
                       cout << " " << endl;
@@ -628,6 +628,9 @@ int main() {
                           cout << "Ingrese descripción: ";
                           getline(cin, descripcion);
 
+                          cout << "Ingrese imagen: "; // Solicito la imagen
+                          getline(cin, imagen);
+
                           cout << "Ingrese precio de costo: ";
                           cin >> precioCosto;
 
@@ -641,9 +644,12 @@ int main() {
                           cin.ignore(); // Para limpiar el buffer
                           getline(cin, fecha_ingreso);
 
+                          cout << "Ingrese ID de marca: "; // Solicito el ID de la marca
+                          cin >> idMarca;
+
                           // Crear el producto y llamar al método para guardar en la base de datos
                           {
-                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              Productos producto2 = Productos(idproducto, producto, idMarca, descripcion, imagen, precioCosto, precioVenta, existencia, fecha_ingreso); // Pasa 'idMarca' y 'imagen' al constructor
                               producto2.crear();
                           }
 
@@ -653,7 +659,7 @@ int main() {
                           cout << " " << endl;
                           cout << "Ha seleccionado 'Leer Productos'" << endl;
                           {
-                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              Productos producto2 = Productos(idproducto, producto, idMarca, descripcion, imagen, precioCosto, precioVenta, existencia, fecha_ingreso); // Pasa 'idMarca' y 'imagen' al constructor
                               producto2.leer();
                           }
                           break;
@@ -663,7 +669,7 @@ int main() {
                           cout << "Ha seleccionado 'Borrar Producto '" << endl;
 
                           {
-                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              Productos producto2 = Productos(idproducto, producto, idMarca, descripcion, imagen, precioCosto, precioVenta, existencia, fecha_ingreso); // Pasa 'idMarca' y 'imagen' al constructor
                               producto2.leer();
 
                               cout << "Ingrese el ID a eliminar: ";
@@ -681,7 +687,7 @@ int main() {
                           cout << " " << endl;
                           cout << "Ha seleccionado 'Actualizar Productos'" << endl;
                           {
-                              Productos producto2 = Productos(idproducto, producto, descripcion, precioCosto, precioVenta, existencia, fecha_ingreso);
+                              Productos producto2 = Productos(idproducto, producto, idMarca, descripcion, imagen, precioCosto, precioVenta, existencia, fecha_ingreso); // Pasa 'idMarca' y 'imagen' al constructor
                               producto2.leer();
 
                               cout << "Ingrese el ID del producto: ";
@@ -697,6 +703,10 @@ int main() {
                               cout << "Ingrese descripción: ";
                               getline(cin, descripcion);
                               producto2.setDescripcion(descripcion);
+
+                              cout << "Ingrese imagen: "; // Solicito la imagen
+                              getline(cin, imagen);
+                              producto2.setImagen(imagen);
 
                               cout << "Ingrese precio de costo: ";
                               cin >> precioCosto;
@@ -715,11 +725,14 @@ int main() {
                               getline(cin, fecha_ingreso);
                               producto2.setFechaIngreso(fecha_ingreso);
 
+                              cout << "Ingrese ID de marca: "; // Solicito el ID de la marca
+                              cin >> idMarca;
+                              producto2.setIdMarca(idMarca);
+
                               producto2.actualizar();
                               producto2.leer();
                           }
                           break;
-
 
                       case 5:
                           cout << " " << endl;
@@ -730,12 +743,12 @@ int main() {
                           cout << "Error, por favor escribe un numero correcto" << endl;
                           break;
                       }
-                  } while (opcion != 5); // Salir del bucle cuando se selecciona la opción 5
-                  break; // Salir del switch y volver al menú principal
-
+                  } while (opcion != 5); 
+                  break; 
+                  
               case 7:
                   cout << "Saliendo del programa. ¡Hasta luego!" << endl;
-                  return 0; // Salir del programa si el usuario selecciona la opción 7
+                  return 0; 
 
               default:
                   cout << "Error, por favor escribe un número correcto" << endl;
